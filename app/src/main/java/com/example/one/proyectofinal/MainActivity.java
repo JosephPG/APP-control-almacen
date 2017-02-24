@@ -36,10 +36,6 @@ public class MainActivity extends AppCompatActivity {
 
         usuario=(EditText) findViewById(R.id.edt_usuario);
         password=(EditText) findViewById(R.id.edt_password);
-
-        usuario.setText("");
-        password.setText("");
-
     }
 
     /** Validar ingreso de logueo **/
@@ -60,6 +56,8 @@ public class MainActivity extends AppCompatActivity {
         }else{
             Toast.makeText(this, msj, Toast.LENGTH_LONG).show();
         }
+	usuario.setText("");
+        password.setText("");    
     }
 
     /** Conexion por web para obtener usuario**/	
